@@ -13,6 +13,7 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     height: var(--header-height);
+    margin-bottom: 2rem;
 }
 
 #logo-left {
@@ -54,5 +55,15 @@ header {
     margin-left: 1rem;
 }
 
+.stripes {
+    height: 1rem;
+    background: repeating-linear-gradient(
+    45deg,
+    gray,
+    gray 1px,
+    white 1px,
+    white 3px
+    );
+}
 
 
