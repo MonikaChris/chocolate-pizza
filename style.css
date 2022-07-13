@@ -1,11 +1,37 @@
 html {
     --header-height: 4rem;
+    --left-margin: 20%;
+    --right-margin: 20%;
 }
 
 body {
     height: 100vh;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: var(--left-margin);
+    margin-right: var(--right-margin);
+}
+
+h1 {
+    font-family: 'Padauk', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+h6 {
+    margin-top: 0;
+    font-size: 1rem;
+    font-family: 'Padauk', sans-serif;
+    color: gray;
+}
+
+h1 + h6 {
+    line-height: 0;
+}
+
+p {
+    font-size: 1.5rem;
+    font-family: 'Halant', serif;
+    text-indent: 2rem;
 }
 
 header {
@@ -64,6 +90,24 @@ header {
     white 1px,
     white 3px
     );
+    margin-bottom: var(--header-height)/2;
 }
 
+.icon-small {
+    height: .9rem;
+}
 
+#pizza-photo {
+    width: 100%;
+    transform: translateY(-2rem);
+}
+
+#print-icon > h6 {
+    display: inline;
+}
+
+#print-icon {
+    width: max-content;
+    margin-left: auto;
+    transform: translateY(-3rem);
+}
