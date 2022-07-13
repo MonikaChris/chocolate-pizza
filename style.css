@@ -1,0 +1,58 @@
+html {
+    --header-height: 4rem;
+}
+
+body {
+    height: 100vh;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: var(--header-height);
+}
+
+#logo-left {
+    height: var(--header-height);
+}
+
+#logo-text {
+    font-size: calc(var(--header-height)/2);
+    font-family: 'Yellowtail', cursive;
+}
+
+#tagline {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#left-header {
+    display: flex;
+}
+
+#logo-right {
+    height: var(--header-height);
+    display: flex;
+    flex-direction: column;
+    margin-left: calc(var(--header-height)/8);
+}
+
+.icon {
+    height: calc(var(--header-height)/2);
+    margin-left: 2px;
+}
+
+#right-header {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+}
+
+.icon:nth-child(7) {
+    margin-left: 1rem;
+}
+
+
+
