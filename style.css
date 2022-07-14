@@ -117,13 +117,10 @@ header {
     background-size: 100% 100%;
     font-family: 'Edu NSW ACT Foundation', cursive;
     font-size: 1.3rem;
-    
-}
-
-#recipe {
     display: flex;
     justify-content: space-around;
     height: 305px;
+    margin-bottom: 2rem;
 }
 
 #left-list, #right-list {
@@ -135,4 +132,37 @@ header {
 
 input + label {
     display: inline;
+}
+
+#bio {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+#bio-photo {
+    height: 5rem;
+}
+
+#bio-text {
+   width: 60%;
+   padding-left: 2rem;
+   font-family: 'Halant', serif;
+}
+
+#bio-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#bio > button {
+    margin-left: auto;
+    align-self: center;
+    width: 12rem;
+    height: 4rem;
+    border-radius: 0;
+    color: white;
+    background-color: rgb(199, 104, 70);
+    border: rgb(199, 104, 70);
+    font-size: 1.1rem;
 }
