@@ -166,3 +166,34 @@ input + label {
     border: rgb(199, 104, 70);
     font-size: 1.1rem;
 }
+
+#left-line, #right-line {
+    height: .1rem;
+    width: 50%;
+    background-color: gray;
+}
+
+#footer-border {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/*footer>.icon::before, footer>.icon::after {
+    content: "";
+    display: block;
+    height: 1rem;
+    min-width: 30vw;
+    background-color: gray;
+}*/
+
+footer {
+    text-align: center;
+    color: gray;
+    font-family: 'Halant', serif;
+    padding-bottom: 1rem;
+}
+
+
+
+
