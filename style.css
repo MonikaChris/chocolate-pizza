@@ -99,7 +99,6 @@ header {
 
 #pizza-photo {
     width: 100%;
-    transform: translateY(-2rem);
 }
 
 #print-icon > h6 {
@@ -110,4 +109,30 @@ header {
     width: max-content;
     margin-left: auto;
     transform: translateY(-3rem);
+    margin-bottom: -1rem;
+}
+
+#recipe {
+    background-image: url(assets/list-bg.png);
+    background-size: 100% 100%;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 1.3rem;
+    
+}
+
+#recipe {
+    display: flex;
+    justify-content: space-around;
+    height: 305px;
+}
+
+#left-list, #right-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+input + label {
+    display: inline;
 }
