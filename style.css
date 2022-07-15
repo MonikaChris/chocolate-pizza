@@ -117,6 +117,7 @@ header {
     background-size: 100% 100%;
     font-family: 'Edu NSW ACT Foundation', cursive;
     font-size: 1.3rem;
+    color: rgb(110,116,121);
     display: flex;
     justify-content: space-around;
     height: 305px;
@@ -127,12 +128,45 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    gap: .3rem;
+    margin-bottom: 3.1rem;
 }
 
-input + label {
-    display: inline;
+input[type="checkbox"] {
+    appearance: none;
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid rgb(184, 175, 140);
+    border-radius: 4px;
+    margin-right: .5rem;
+    vertical-align: -4px;
 }
+
+input[type="checkbox"]::before {
+    content: "✔";
+    color: rgb(184, 175, 140);
+    position: absolute;
+    font-size: 1rem;
+    right: -2px;
+    top: -2px;
+    visibility: hidden;
+}
+
+input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    visibility: visible;
+    
+  
+}
+
+input[type="checkbox"]:checked::before {
+    visibility: visible;
+}
+
+/*input + label {
+    display: inline;
+}*/
 
 #bio {
     display: flex;
@@ -173,19 +207,16 @@ input + label {
     background-color: gray;
 }
 
+#footer-border > .icon {
+    transform: translateX(-1px);
+}
+
 #footer-border {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
 }
 
-/*footer>.icon::before, footer>.icon::after {
-    content: "";
-    display: block;
-    height: 1rem;
-    min-width: 30vw;
-    background-color: gray;
-}*/
 
 footer {
     text-align: center;
